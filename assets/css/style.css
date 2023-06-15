@@ -1,0 +1,143 @@
+@import url(./reset.css);
+/* font family-roboto */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --tund-mavi: #2B1A66;
+    --aciq-mavi: #2B98E6;
+   
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body{
+    font-family: 'Alkatra', cursive;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.deserve-section {
+    padding: 800px 0;
+    display: flex;
+}
+
+.engineers-side {
+    width: 730px ;
+    height: 1018.76px;
+    position: relative;
+}
+
+.engineers-side i {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.engineers-side>img {
+    height: 100%;
+    width: 730px;
+}
+
+.deserve-side {
+    width: 790px;
+    height: 918.76px;
+    margin-top: 100px;
+    padding: 130px 120px 120px 80px;
+    background-color: var(--tund-mavi)
+}
+
+.deserve-side>h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--aciq-mavi);
+}
+
+.deserve-side>h1 {
+    color: #FFF;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.deserve-side>p {
+    color: #FFF;
+    margin-bottom: 35px;
+}
+
+.see-more-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.see-more-left {
+    align-items: center;
+    width: 263px;
+    height: 293px;
+    padding: 40px 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: #FFF;
+    background-color: var(--aciq-mavi);
+}
+
+.see-more-left h3 {
+    font-size: 25px;
+    margin-bottom: 16px;
+    margin-top: 29px;
+}
+
+.see-more-left p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.see-more-left>a {
+    color: #FFF;
+    display: block;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.see-more-left #left {
+    font-size: 50px;
+}
+
+.see-more-right {
+    align-items: center;
+    width: 263px;
+    height: 293px;
+    padding: 40px 30px;
+    margin-top: 60px;
+    margin-left: 20px;
+    background-color: #FFF;
+}
+
+.see-more-right h3 {
+    font-size: 24.8px;
+    margin-top: 29px;
+    margin-bottom: 16px;
+}
+
+.see-more-right p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.see-more-right a {
+    color: black;
+    font-weight: 700;
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.see-more-right #right {
+    font-size: 50px;
+}
