@@ -5,35 +5,45 @@
 :root {
     --tund-mavi: #2B1A66;
     --aciq-mavi: #2B98E6;
-   
+
 }
 
 a {
     text-decoration: none !important;
 }
 
-body{
+body {
+    overflow-x: hidden !important;
     font-family: 'Alkatra', cursive;
     font-family: 'Delicious Handrawn', cursive;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
-.deserve-section {
-    padding: 800px 0;
+/* .deserve-section {
+    padding: 400px 0;
     display: flex;
-}
+} */
 
 .engineers-side {
-    width: 730px ;
+    /* width: 780px ; */
     height: 1018.76px;
     position: relative;
 }
 
+
+.engineers-side #video-link {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    z-index: 999;
+}
+
 .engineers-side i {
     position: absolute;
-    top: 50%;
-    left: 38%;
+    top: 470px;
+    left: 40%;
     transform: translate(-50%, -50%);
     z-index: 1;
     font-size: 100px;
@@ -41,15 +51,18 @@ body{
 }
 
 .engineers-side>img {
-    height: 100%;
-    width: 730px;
+    height: 100% ;
+    max-width: 100% ;
+    object-fit:cover;
 }
 
 .deserve-side {
-    width: 790px;
+    /* width: 760px; */
+    max-width: 100%;
     height: 918.76px;
-    margin-top: 100px;
-    padding: 130px 120px 120px 80px;
+    position: relative;
+    margin-top: 100px !important;
+    padding: 130px 120px 120px 80px !important;
     background-color: var(--tund-mavi)
 }
 
@@ -78,7 +91,7 @@ body{
 .see-more-left {
     align-items: center;
     width: 263px;
-    height: 293px;
+    height: 305px;
     padding: 40px 30px;
     margin-top: 10px;
     margin-right: 20px;
@@ -112,7 +125,7 @@ body{
 .see-more-right {
     align-items: center;
     width: 263px;
-    height: 293px;
+    height: 305px;
     padding: 40px 30px;
     margin-top: 60px;
     margin-left: 20px;
@@ -140,4 +153,56 @@ body{
 
 .see-more-right #right {
     font-size: 50px;
+}
+@media(max-width:991px){
+    .deserve-side {
+        margin-top: 100px !important;
+        padding: 60px 25px 25px 15px !important;
+    }
+    .see-more-left{
+        padding: 25px 15px ;
+        
+    }
+    .see-more-right{
+        margin-left: 0;
+        padding: 25px 15px ;
+    }
+}
+
+@media(max-width:768px){
+    .deserve-side{
+        margin-top: 0 !important;
+        padding: 60px 25px 25px 25px !important;
+    }
+    .engineers-side>img {
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .engineers-side{
+        height: 517px;
+    }
+    .engineers-side i {
+        top: 217px;
+    }
+    iframe{
+        width: 330px;
+        height: 200px;
+    }
+    .engineers-side #video-link {
+        display: none;
+        position: absolute;
+        top: 55%;
+        left: 15%;
+        z-index: 999;
+    }
+}
+@media(max-width:375px){
+    .engineers-side #video-link{
+        left: 2%;
+    }
+}
+
+.display-on{
+    display: block !important;
 }
